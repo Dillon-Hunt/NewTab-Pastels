@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="chrome://branding/content/icon32.png" />
+
+    <title>New Tab</title>
+
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+
+    <script defer src="./quotes.js"></script>
+    <script defer src="./helper.js"></script>
+
+    <script defer src="./pong.js"></script>
+    <script defer src="./searchbar.js"></script>
+    <script defer src="./links.js"></script>
+
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div class="background"></div>
+
+    <p class="color-code"></p>
+
+    <div class="quote">
+        <p class="quote-text"></p>
+        <p class="quote-author"></p>
+    </div>
+
+    <div class="top-links"></div>
+    <div class="top-context-menu hidden">
+        <p class="top-context-menu-option">Delete Link</p>
+        <p class="top-context-menu-option">New Link</p>
+    </div>
+    
+    <div class="sidebar-left-dock-mousearea"></div>
+    <div class="sidebar-left-dock paused collapsed"></div>
+    <div class="sidebar-left">
+        <div class="color red"></div>
+        <div class="color orange"></div>
+        <div class="color yellow"></div>
+        <div class="color green"></div>
+        <div class="color aqua"></div>
+        <div class="color purple"></div>
+        <div class="color pink"></div>
+    </div>
+
+   
+    <div class="sidebar-right-dock-mousearea"></div>
+    <div class="sidebar-right-dock paused collapsed"></div>
+    <div class="sidebar-right">
+        <p class="options-title">Settings</p>
+        <p class="option theme">Mode</p>
+        <p class="option global-theme">Theme</p>
+        <p class="option quotes">Quotes</p>
+        <p class="option hex">Hex Code</p>
+        <p class="option input">Searchbar</p>
+        <p class="option links">Bookmarks</p>
+
+        <!-- Alternate Style
+        <p class="option hex">#</p>
+        <p class="option theme">◑</p>
+        <p class="option title">Tt</p>
+        <p class="option input">─</p>
+        <p class="option links">+</p> -->
+    </div>
+
+    <form class="search">
+        <p class="search-title">Search</p>
+        <div class="search-input-extra">
+            <input class="search-input" type="text" placeholder="Type Anything" />
+        </div>
+    </form>
+
+    <div class="ball hidden"></div>
+
+    <form class="model hidden">
+        <h2 class="model-title">title</h2>
+        <p class="model-subtitle">subtitle</p>
+        <input class="model-input" placeholder="input" type="text" required />
+        <input class="model-input" placeholder="input" type="text" required />
+        <button class="model-submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
